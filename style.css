@@ -1,0 +1,102 @@
+/* === Global === */
+body {
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(135deg, #f5e3fc, #c2f0f7);
+  text-align: center;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+input, button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* === Login Page === */
+.main-container {
+  max-width: 450px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+.animated-text {
+  color: #ca4fff;
+  font-size: 26px;
+  animation: bounce 2s infinite;
+}
+.subtitle {
+  color: #333;
+  margin-bottom: 10px;
+}
+.login-card input {
+  display: block;
+  width: 90%;
+  border: 2px solid #eccafc;
+  border-radius: 10px;
+}
+.login-card button {
+  background-color: #ca80ff;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.login-card button:hover {
+  transform: scale(1.05);
+}
+
+/* === Animated Icons === */
+.main-container .animated-icon {
+  width: 80px;
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+.main-container .animated-icon:nth-child(3) {
+  top: -40px; left: -30px;
+}
+.main-container .animated-icon:nth-child(4) {
+  bottom: -40px; right: -30px;
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-10px); }
+}
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-10px); }
+}
+
+/* === Game Page === */
+.game-page {
+  max-width: 450px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.header h1 {
+  color: #ca4fff; font-size: 26px; margin-bottom: 1rem;
+}
+.header button {
+  background-color: #d07efc; border: none; color: white;
+  border-radius: 15px; cursor: pointer; transition: transform 0.2s;
+}
+.header button:hover { transform: scale(1.05); }
+.game p { font-size: 18px; color: #333; margin: 1rem 0; }
+.choices {
+  display: flex; justify-content: space-around; margin: 1rem 0;
+}
+.choices button {
+  background-color: #ca80ff; border: none; color: white;
+  border-radius: 15px; cursor: pointer; transition: transform 0.2s;
+  font-size: 18px; padding: 10px 15px;
+}
+.choices button:hover { transform: scale(1.1); }
+#result {
+  margin-top: 1rem; font-weight: bold; color: #cd4cfc; font-size: 20px;
+}

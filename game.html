@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Air Batu Cawan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-page">
+    <div class="header">
+      <h1>Air 💧 Batu 🪨 Cawan ☕</h1>
+      <button onclick="logout()">Log Out</button>
+    </div>
+    <div class="game">
+      <p>Pilih satu:</p>
+      <div class="choices">
+        <button onclick="play('Air')">💧 Air</button>
+        <button onclick="play('Batu')">🪨 Batu</button>
+        <button onclick="play('Cawan')">☕ Cawan</button>
+      </div>
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <!-- Firebase compat SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+  <!-- App logic -->
+  <script src="script.js"></script>
+</body>
+</html>

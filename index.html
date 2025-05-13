@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Air Batu Cawan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1 class="animated-text">🌟 Selamat Datang ke Dunia Air, Batu & Cawan! 🌟</h1>
+    <div class="login-card">
+      <p class="subtitle">Sila Sign In atau Log In untuk bermain</p>
+      <input type="email" id="email" placeholder="Email📧" />
+      <input type="password" id="password" placeholder="Password🔒" />
+      <button onclick="signup()">Sign In</button>
+      <button onclick="login()">Log In</button>
+    </div>
+    <!-- Ikon terapung -->
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712164.png" class="animated-icon" alt="">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712122.png" class="animated-icon" alt="">
+  </div>
+
+  <!-- Firebase compat SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+  <!-- App logic -->
+  <script src="script.js"></script>
+</body>
+</html>
